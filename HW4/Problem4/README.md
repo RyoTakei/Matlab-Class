@@ -1,7 +1,7 @@
 # Homework 4 - Problem 4 (Epidemic Part 4)
 This one was pretty tricky, took me 2 hours-ish. YMMV! 
 
-**READ THIS BEFORE YOU BEGIN!!!!!!**
+**[READ THIS BEFORE YOU BEGIN!!!!!!](https://github.com/RyoTakei/Matlab-Class)**
 -
 
 
