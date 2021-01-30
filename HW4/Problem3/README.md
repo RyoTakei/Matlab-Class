@@ -1,4 +1,4 @@
-# Homework 4 - Problem 4 (Epidemic Part 4)
+# Homework 4 - Problem 3 (Calculating pi)
 This one is pretty simple, but hard to debug.
 took me 1 hours-ish. YMMV! 
 
