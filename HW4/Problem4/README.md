@@ -52,8 +52,29 @@ means this function will calculate changes in population in 0.05 days. Essential
 % S_1 = S_0 + dS * td
 % for all S, R, I
 ```
-this clock of code. Remember, we used for loop to calculate the population change over time,
-by running this code over and over. `DiseaseStep` will take care of one step. 
+this block of code. Remember, we used a for loop to calculate the population change over time,
+by running this code over and over. So this week:
+```math
+for [ .... ]    
+    dS = (-a * S * I) / N
+    dI = (a * S * I) /  N - I / b
+    dR = I / b
+    N = S + I + R
+
+    S_1 = S_0 + dS * td
+    I_1 = I_0 + dI * td
+    R_1 = R_0 + dR * td
+end
+```
+Will now change to
+
+```math
+for [ .... ]
+    [newS, newI, newR] = DiseaseStep( .... ) 
+end
+```
+
+That's it! 
 
 **Inputs are as follows**
 - `SIN`, S input at given time stamp.
@@ -73,10 +94,8 @@ Notice that NONE of them are array. They are NOT arrays!!
 
 So now you should have enough information to write this function. 
 
-tl;dr: This function takes current S, I, R value and calculates next S, I, R values.
-
 ### Step 2. `DiseaseSimulate`
-This function is the function that runs the simulation.
+This function is the function that runs the simulation. Basically replacing the for loop.
 
 Let's look at the header. 
 
@@ -86,14 +105,13 @@ function [SvsT, IvsT, RvsT, time] = DiseaseSimulate(SStart, IStart, a, b, h, nSt
 end
 ```
 
-This function is much bigger scale now. `DiseaseStep` was dealing with 0.05 days a step
-but now, we're looking at much longer scale. 
+`DiseaseStep` was dealing with 0.05 days a step but now, we're looking at much longer scale. 
 
 This function is actually very simple! Like, very simple. 
 
 All you're doing here is that you're going to call the function `DiseaseStep`, `nSteps` times.
 Sound confusing? Well, we know that `sSteps` is 140, per instruction, you're going to run 
-`DiseaseStep` 140 times using for loop. But it doesn't end there. Let's look at iputs and outputs
+`DiseaseStep` 140 times using a for loop. But it doesn't end there yet -- let's look at iputs and outputs
 to understand better. 
 
 **Inputs are as follows**
@@ -116,9 +134,9 @@ at east time stamp -- our y values when we plot them.
 To make this function work, again, you need a for loop. For loop that runs `nSteps` times, and
 calls `DiseaseStep` in the loop -- that updates SIR values. 
 
-But you also need to keep track of each values that `DiseaseStep` outputs. At the end of the day,
-this function will return an arrays of outputs from `DiseaseStep`. Hopefully that's 
-enough info to get you started! 
+But you also need to keep track of each values that `DiseaseStep` outputs. In short,
+this function will collect outputs from `DiseaseStep`, throw them into arrays and spits it out.
+Hopefully that's enough info to get you started! 
 
 
 ### Step 3. Plotting
@@ -148,12 +166,12 @@ loop to go through each S values and throw that into `DiseaseSimulate`.
 
 That's actaully not a bad news for us, because that means we can take advantage of that
 for loop. Since we're already putting `DiseaseSimulate` in the for loop for each S value, 
-why not just grab the outputs straight from the fucntion and plot that right away? That works quite beautifully 
-here. 
+why not just grab the outputs straight from the function and plot that right away? That 
+works quite beautifully here. 
 
 If you read the instruction, you can see that we can use another for loop just for 
 the labels, legend, etc etc. You already have somewhat of code given, so I'll let you 
-figure that out ;pp
+figure that out (jk, more can be found in my example code).
 
 If you've done the right thing, you should get all the same answers as last week,
 except our code is now a bit advanced. Again, nothing is changing, we're just being 

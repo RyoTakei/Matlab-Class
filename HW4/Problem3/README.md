@@ -8,7 +8,7 @@ took me 1 hours-ish. YMMV!
 ## Warning!!
 This program has a loop that runs more than 100,000 times. Yes you heard it correctly, 
 more than 100,000 times. That's right, a hundred thousand times. It took my computer 
-about 5-10 minutes to run. Be careful, your computer will get hot. Just be very careful
+about 5-10 minutes to run(though, some people have told me it took them less than 3 min). Be careful, your computer will get hot. Just be very careful
 before running it!!!!
 
 ## Breakdown
@@ -54,7 +54,7 @@ and need to loop "until" that condition is met. A good example was labs in week 
 how many times we needed to loop, but we had the condition, `totalCups < least_num_cups` so that 
 loop ran "until" that condition is met. In short, for loop is when we know how many times to loop,
 and while loop is a "until" loop where you have a condition to end the loop and will run until the 
-condition is met. That's also why while loop can cause an infinite loop because some condition can be 
+condition is met. That's also why while loop can cause an infinite loop because some conditions can be 
 never met in your code. 
 
 So what is the answer? Do we know how many times we need to run this loop? Or we don't? The 
@@ -96,7 +96,8 @@ value is within `1e-5`.
 
 Let's look at patters we've found one by one and see how we can implement this in matlab.
 
-#### Alternating signs
+#### - Alternating signs
+
 
 The instruction gave us answers already. 
 
@@ -104,8 +105,10 @@ The instruction gave us answers already.
 > mod(k,2) returns 0 if k is even, 1 if k is odd. 
 
 We look into the iteration number and use that to decide if you're adding or subtracting value.
+The simplest trick to do this is to make a variable that's either 1 or -1, and multiply your term
+by that number to flip the sign if needed. 
 
-#### Denominator is every odd number.
+#### - Denominator is every odd number.
 
 Should be easy too. I'll make a quick table and see if you can figure it out.
 
@@ -118,43 +121,12 @@ Iteration | Denominator |
 5 | 9 |
 ...| ...|
 
-If you can express denominator using itetration number, that's all you need. 
+If you can express denominator using iteration number, that's all you need. 
 
-#### Numerator is always 4. 
+#### - Numerator is always 4. 
 Did you know that 1 + 3 is 4? Did you also know that 2 * 2 is 4? But 1 + 2 is not 4....
 
-Ok jk, it's just 4. Need to expalin more? 
+Ok jk, it's just 4. Need to explain more? 
 
-## Tips to get started.
-By now, you should have full understanding, but I want to give you some useful tips before you start.
-This program requires some precision, at least `1e-5`. If you simpy type 
-
-```math
->> pi
-```
-in Command Window what do you get? You'd only get `3.1416`. Matlab rounds floats(decimal, but we call 
-it float. Wonder why we use `%f` for decimal? well, that's why) to 4 decimal numbers when it prints. 
-But, we need more than 4... How can we do that? There's a very useful function called `vpa`. Look it up on Google and 
-play around with it to understand what it does! Here's a few things you can do to try out. 
-
-```math
->> vpa(pi, 2)
-
->> vpa(pi, 10)
-
->> vpa(pi, 100)
-
->> 3 - vpa(pi, 10)
-
->> 3 - pi
- 
->> 1/3
-
->> 3.1415926 - pi
-
->> 3.1415926 - vpa(pi, 10)
-```
-
-Remember, pi has tons of decimal places after 4, but it rounds ONLY when it prints. So you don't need it 
-for while loop, or anything in the code. You should be able to write while loop without it. Try out the last two
-to see the difference. 
+## And that's a wrap! 
+Well, you still need to do number 2, but this should be easy to figure out. 
