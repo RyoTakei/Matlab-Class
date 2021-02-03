@@ -8,8 +8,10 @@ took me 1 hours-ish. YMMV!
 ## Warning!!
 This program has a loop that runs more than 100,000 times. Yes you heard it correctly, 
 more than 100,000 times. That's right, a hundred thousand times. It took my computer 
-about 5-10 minutes to run(though, some people have told me it took them less than 3 min). Be careful, your computer will get hot. Just be very careful
+about 5 minutes to run(though, some people have told me it took them less than 3-2 min). Be careful, your computer will get hot. Just be very careful
 before running it!!!!
+
+UPDATE: THIS IS A LIE, IM AN IDIOT. Your code should only take a few seconds...ctrl-c if it takes more than a min...
 
 ## Breakdown
 This problem is very straight forward. You're asked to find the value of pi
