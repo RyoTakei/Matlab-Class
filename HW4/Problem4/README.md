@@ -134,8 +134,13 @@ at east time stamp -- our y values when we plot them.
 To make this function work, again, you need a for loop. For loop that runs `nSteps` times, and
 calls `DiseaseStep` in the loop -- that updates SIR values. 
 
-But you also need to keep track of each values that `DiseaseStep` outputs. In short,
-this function will collect outputs from `DiseaseStep`, throw them into arrays and spits it out.
+But you also need to keep track of each values that `DiseaseStep` outputs. 
+
+In short, this function will do 3 things.
+- Run the for loop and call `DiseaseStep`, `nSteps` times.
+- Keep track of outputs in each loop. Remember, your output becomes new inputs in the next loop cycle.
+- And store the each outputs into arrays, `SvsT`, `IvsT`, and `RvsT` every cycle.
+
 Hopefully that's enough info to get you started! 
 
 
