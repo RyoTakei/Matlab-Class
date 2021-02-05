@@ -1,5 +1,10 @@
 # Read this before you use this page!!
 
+### Update notes
+- No I will not be posing guides for extra credits. Extra credits are extra credits. I just want 
+you to do well in this class. I'd be happy to give you assistance on extra credits but no guide.
+  
+
 ## Disclaimer
 I'm not your writing teacher, nor I don't care + I don't have time to go through and fix my 
 mistakes. And I barely speak English(this is a lie) so leave me alone for any of writing mistake.
