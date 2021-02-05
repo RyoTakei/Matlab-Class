@@ -3,7 +3,9 @@
 ### Update notes
 - No I will not be posing guides for extra credits. Extra credits are extra credits. I just want 
 you to do well in this class. I'd be happy to give you assistance on extra credits but no guide.
-  
+- Why I ditched the video idea? Well, I needed to gather my thoughts before publishing and video 
+was too "on the fly" for me. Also I usually make this at like 2-3am, and my parents are sleeping 
+  by then. So that's also a reason.
 
 ## Disclaimer
 I'm not your writing teacher, nor I don't care + I don't have time to go through and fix my 
