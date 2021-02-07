@@ -6,6 +6,10 @@ This one was pretty tricky, took me 1 hours-ish. YMMV!
 -
 
 ## fzero function
+
+UPDATE: Haha I guess this was covered in zybooks... I didn't know. So you can skip it if you
+already know fzero. Sorry.
+
 This problem is super easy if you know how to use `fzero`. If you don't, keep reading this guide. 
 If you already know how this works, you should have no issues completing this problem. Overall,
 other than tricky `fzero` function, this problem is very easy.
