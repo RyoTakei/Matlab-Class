@@ -20,7 +20,9 @@ can use polynomial to connect ALL points in the graph. Kind of crazy to think ab
 but it's actaully true. If you have 2 points, you can connect them with a line. 
 If you have 3 points, you can connect them with 2nd degree polynomial, etc etc. 
 So simply put, if you have 30 points in the graph, there is a 29th degree polynomial 
-that connects all 30 points. To see this in action, feel free to download 
+that connects all 30 points. 
+
+To see this in action, feel free to download 
 "LeastSquareFit.m" or copy and paste following code in your matlab. You can 
 change `points` variable and see that it actaully works.
 
