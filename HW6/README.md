@@ -1,4 +1,4 @@
-# Fair warming for you all
+# Fair warning for you all
 Please ready this, this is a bit of message for you.
 
 First thing first, **NO EPIDEMIC PROBLEM THIS WEEK!!!!!!**
