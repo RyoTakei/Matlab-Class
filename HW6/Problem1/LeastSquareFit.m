@@ -1,12 +1,20 @@
 % Written by Ryo at 3 am haha
+% Change points variable!!!!!
+
 
 clear;
 clc;
 clf;
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHANGE THIS!!!!!!!
+% Don't touch anything else lol
+%
 % I just added random values here.
-% You can add as many as you want.
-% Make sure to match the format
+% You can add as many as you want. Add 30 points if you want.
+%
+% Make sure to match the format. 
+% format of "x, y;" for all of them!!!!
 points = [
     2, 4;
     3, 8;
@@ -16,6 +24,10 @@ points = [
     12, 87;
     43, 20;
 ];
+%
+% Don't touch anything else!
+% If you break this code, let me know too. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Just getting x and y from the points
 x = points(:, 1);
