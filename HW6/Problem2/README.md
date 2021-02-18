@@ -61,7 +61,7 @@ A = @(A_0, r, t)A_0 .* exp(r .* t);
 We also know that 
 ```matlab
 A_0 = 20; % mg
-r = 0.000436; decaying rate
+r = -0.000436; decaying rate
 ```
 Since we already know 2/3 variables, we can set up another anonymous function. 
 Your anonymous function should look something like
