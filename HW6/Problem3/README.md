@@ -16,9 +16,7 @@ We will be using trapezoid method in this problem.
 
 If you don't know how to use `trapz` function, go read the zybooks or google it. 
 
-This problem will take 4 lines of code (not including comments and white lines).
-Do remind Micheal that this problem is actually easy. Otherwise, he'll make everything 
-way too complicated. 
+This problem will take 5 lines of code (not including comments and white lines).
 
 
 ### Line #0: Make sure to add `clc`, `clear` etc. 
@@ -40,4 +38,6 @@ Print the area you calculated in line #3. Make sure it matches with selfcheck. C
 
 (I also realized that you could combine line 3 and 4....whatever...)
 
+### Line #5: Plot
+Plot your x and y, it should look something like weird trapezoid.
 
