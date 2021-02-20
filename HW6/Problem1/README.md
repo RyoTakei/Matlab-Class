@@ -155,6 +155,9 @@ with polynomials, all your graphs look exactly the same
 <details><summary><b>!! Self Check Here !!</b></summary>
 <p>
 
+My axis label is flipped sorry!!
+---
+
 ![selfcheck part a](../../img/HW5/p1step2.png)
 
 </p>
@@ -185,6 +188,9 @@ Whatever is easiest for you, both will work just fine.
 
 <details><summary><b>!! Self Check Here !!</b></summary>
 <p>
+    
+My axis label is flipped sorry!!
+---
 
 ![selfcheck part a](../../img/HW5/p1pa.png)
 
